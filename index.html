@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a viewport para dispositivos móveis -->
+    <title>Calculadora Científica</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="CSS/Style.css"> <!-- Importa o arquivo CSS externo -->
+</head>
+
+<body>
+    <div class="calculator"> <!-- Contêiner principal da calculadora -->
+        <div class="screen" id="screen">0</div> <!-- Tela da calculadora onde os números são exibidos -->
+        <div class="buttons"> <!-- Contêiner dos botões da calculadora -->
+            <!-- Botões numéricos -->
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <!-- Botões de operação -->
+            <button class="button operation" onclick="setOperation('+')">+</button>
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button operation" onclick="setOperation('-')">-</button>
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button operation" onclick="setOperation('*')">*</button>
+            <button class="button" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="appendDecimal('.')">.</button>
+            <button class="button operation" onclick="setOperation('/')">/</button>
+            <!-- Botões especiais -->
+            <button class="button equals" onclick="calculate()">=</button>
+            <button class="button clear" onclick="clearScreen()">C</button>
+            <button class="button sqrt" onclick="calculateSqrt()">√</button>
+        </div>
+    </div>
+
+    <script src="script/Jscript.js"></script> <!-- Importa o arquivo JavaScript externo -->
+</body>
+
+</html>
