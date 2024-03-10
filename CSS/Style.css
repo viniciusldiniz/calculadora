@@ -1,84 +1,98 @@
+/* Define as propriedades de estilo para o corpo do documento */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif; /* Define a família de fontes */
+    background-color: #f0f0f0; /* Define a cor de fundo */
+    display: flex; /* Define o modelo de layout como flexível */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    height: 100vh; /* Define a altura para ocupar toda a altura da viewport */
 }
 
+/* Define as propriedades de estilo para o contêiner principal da calculadora */
 .calculator {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background-color: #fff; /* Define a cor de fundo */
+    border-radius: 10px; /* Define o raio da borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra à calculadora */
+    padding: 20px; /* Adiciona preenchimento interno */
 }
 
+/* Define as propriedades de estilo para a tela da calculadora */
 .screen {
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: right;
-    font-size: 20px;
-    height: 40px;
-    line-height: 40px;
+    background-color: #f8f8f8; /* Define a cor de fundo */
+    border: 1px solid #ccc; /* Define a borda */
+    border-radius: 5px; /* Define o raio da borda arredondada */
+    padding: 10px; /* Adiciona preenchimento interno */
+    margin-bottom: 10px; /* Adiciona margem inferior */
+    text-align: right; /* Alinha o texto à direita */
+    font-size: 20px; /* Define o tamanho da fonte */
+    height: 40px; /* Define a altura */
+    line-height: 40px; /* Define a altura da linha */
 }
 
+/* Define as propriedades de estilo para os botões da calculadora */
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    display: grid; /* Define o modelo de layout como grid */
+    grid-template-columns: repeat(4, 1fr); /* Define o número de colunas e a largura */
+    grid-gap: 10px; /* Define o espaçamento entre as células do grid */
 }
 
+/* Define as propriedades de estilo para os botões */
 .button {
-    background-color: #ddd;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #ddd; /* Define a cor de fundo */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Define o raio da borda arredondada */
+    padding: 10px; /* Adiciona preenchimento interno */
+    font-size: 18px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s; /* Adiciona uma transição suave de cor de fundo */
 }
 
+/* Define as propriedades de estilo para os botões ao passar o mouse por cima */
 .button:hover {
-    background-color: #ccc;
+    background-color: #ccc; /* Altera a cor de fundo ao passar o mouse por cima */
 }
 
+/* Define as propriedades de estilo para os botões de operação */
 .button.operation {
-    background-color: #f0ad4e;
-    color: #fff;
+    background-color: #f0ad4e; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
 }
 
+/* Define as propriedades de estilo para os botões de operação ao passar o mouse por cima */
 .button.operation:hover {
-    background-color: #eea236;
+    background-color: #eea236; /* Altera a cor de fundo ao passar o mouse por cima */
 }
 
+/* Define as propriedades de estilo para o botão de igual */
 .button.equals {
-    background-color: #5cb85c;
-    color: #fff;
+    background-color: #5cb85c; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
 }
 
+/* Define as propriedades de estilo para o botão de igual ao passar o mouse por cima */
 .button.equals:hover {
-    background-color: #4cae4c;
+    background-color: #4cae4c; /* Altera a cor de fundo ao passar o mouse por cima */
 }
 
+/* Define as propriedades de estilo para o botão de limpar */
 .button.clear {
-    grid-column: span 2;
-    background-color: #d9534f;
-    color: #fff;
+    grid-column: span 2; /* Define a largura do botão para ocupar duas colunas */
+    background-color: #d9534f; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
 }
 
+/* Define as propriedades de estilo para o botão de limpar ao passar o mouse por cima */
 .button.clear:hover {
-    background-color: #c9302c;
+    background-color: #c9302c; /* Altera a cor de fundo ao passar o mouse por cima */
 }
 
+/* Define as propriedades de estilo para o botão de raiz quadrada */
 .button.sqrt {
-    background-color: #337ab7;
-    color: #fff;
+    background-color: #337ab7; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
 }
 
+/* Define as propriedades de estilo para o botão de raiz quadrada ao passar o mouse por cima */
 .button.sqrt:hover {
-    background-color: #286090;
+    background-color: #286090; /* Altera a cor de fundo ao passar o mouse por cima */
 }
